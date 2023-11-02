@@ -1,12 +1,29 @@
-<! DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
+    </style>
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/site.webmanifest" />
     <script
       src="https://kit.fontawesome.com/a43a88b1eb.js"
       crossorigin="anonymous"
@@ -17,31 +34,88 @@
 
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="../index.html">Course</a>
-      <a class="active" href="projects.html">Projects</a>
-      <a href="../concepts/concepts.html">Concepts</a>
-      <a href="../database/database.html">Database</a>
-      <a href="../documentation/documentation.html">Documentation</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa-solid fa-bars"></i>
-      </a>
+      <div class="nav-section">
+        <div class="navbar-title">FUNDAMENTALS OF COMPUTING</div>
+      </div>
+      <div class="nav-section">
+        <a href="../index.html"><i class="fa-solid fa-chalkboard"></i>Course</a>
+        <a class="active" href="projects.html"
+          ><i class="fa-solid fa-diagram-project"></i>Projects</a
+        >
+        <a href="../concepts/concepts.html"
+          ><i class="fa-solid fa-gears"></i>Concepts</a
+        >
+        <a href="../database/database.html"
+          ><i class="fa-solid fa-database"></i>Database</a
+        >
+        <a href="../documentation/documentation.html"
+          ><i class="fa-solid fa-folder-tree"></i>Documentation</a
+        >
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="myFunction()"
+          style="width: 14px"
+        >
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
 
-    <h1>Projects </h1>
-
     <main>
-      <p>
-          Discover the power of JavaScript through exploring a variety of practical applications.
-          From interactive calculators and converters to logic gate simulators, these carefully crafted
-          programs demonstrate the endless possibilities of this versatile language.
-      </p>
+      <h2>Projects</h2>
+      <div class="proj-description">
+        <p>
+          Discover the power of JavaScript through exploring a variety of
+          practical applications. From interactive calculators and converters to
+          logic gate simulators, these carefully crafted programs demonstrate
+          the endless possibilities of this versatile language.
+        </p>
+      </div>
+      <a href="">
+        <div class="project">
+          <h3 class="project-title">Flip-Flop</h3>
+        </div>
+      </a>
+      <a href="">
+        <div class="project">
+          <h3 class="project-title">Half Adder</h3>
+        </div>
+      </a>
+      <a href="">
+        <div class="project">
+          <h3 class="project-title">Binary/Hexadecimal Converter</h3>
+        </div>
+      </a>
+      <a href="">
+        <div class="project">
+          <h3 class="project-title">ASCII Converter</h3>
+        </div>
+      </a>
+      <a href="">
+        <div class="project">
+          <h3 class="project-title">UNICODE Converter</h3>
+        </div>
+      </a>
+      <a href="">
+        <div class="project">
+          <h3 class="project-title">Machine Language Instructions Demo</h3>
+        </div>
+      </a>
     </main>
 
-    <footer>
-      <p>Website and Design by Jenn Sierra</p>
-      <p>[CMPS1134-2] FOC Final Project</p>
-      <p>Semester 2023-1</p>
-      <p>University of Belize</p>
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="https://github.com/jennxsierra" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jennessa-sierra/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="footer-text">Jennessa Sierra @ 2023</div>
     </footer>
+
+    <script src="../scripts/index.js"></script>
   </body>
 </html>

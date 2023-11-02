@@ -1,47 +1,86 @@
 html {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     background-color: #f9f9fb;
 }
 
+body {
+    margin: 0;
+}
+
+main {
+    margin: 8px;
+}
+
 .topnav {
+    display: flex;
+    justify-content: space-between;
     background-color: #181823;
     overflow: hidden;
+    width: 100%;
+    border-bottom: 8px solid #245cdf; /* Set your desired border color */
 }
 
+/* Style the navbar title */
+.topnav .navbar-title {
+    color: #f2f2f2;
+    float: left;
+    padding: 20px 0 0 14px;
+    font-size: 25px;
+}
+
+/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
 }
 
+/* Style the icons inside the links */
+.topnav a i {
+    margin-right: 10px; /* Add margin between the icon and the link text */
+}
+
+/* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #537FE7;
+    background-color: #537fe7;
     color: #181823;
 }
 
+/* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #245CDF;
-    color: #E9F8F9;
+    background-color: #245cdf;
+    color: #e9f8f9;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-    .topnav a:not(:first-child) {display: none;}
+/* When the screen is less than 600 pixels wide, hide all links.
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1100px) {
+    .topnav a {display: none;}
+    .topnav .navbar-title {
+        padding-top: 18px;
+        padding-bottom: 8px;
+    }
     .topnav a.icon {
-        float: right;
         display: block;
+        padding-bottom: 14px;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes
+the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1100px) {
+    .topnav.responsive {
+        display: flex;
+        flex-direction: column;
+    }
     .topnav.responsive a.icon {
         position: absolute;
         right: 0;
@@ -52,4 +91,32 @@ html {
         display: block;
         text-align: left;
     }
+}
+
+/* Styles for the footer */
+.footer {
+    background-color: #181823;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-icons a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+/* Add hover effect to the icons */
+.footer-icons a:hover {
+    color: #537fe7;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
 }
