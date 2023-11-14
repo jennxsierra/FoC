@@ -14,7 +14,7 @@ let abInputPressed = false;
 
 function toggleAInput() {
   if (!aInputPressed) {
-    document.getElementById("halfAdderImage").src = "https://github.com/jennxsierra/foc/blob/main/images/images/ha-a-on.png";
+    document.getElementById("halfAdderImage").src = "https://github.com/jennxsierra/foc/blob/main/images/ha-a-on.png";
     aInputPressed = true;
     bInputPressed = false;
     abInputPressed = false;
@@ -23,7 +23,7 @@ function toggleAInput() {
 
 function toggleBInput() {
   if (!bInputPressed) {
-    document.getElementById("halfAdderImage").src = "https://github.com/jennxsierra/foc/blob/main/images/images/ha-b-on.png";
+    document.getElementById("halfAdderImage").src = "https://github.com/jennxsierra/foc/blob/main/images/ha-b-on.png";
     aInputPressed = false;
     bInputPressed = true;
     abInputPressed = false;
@@ -32,7 +32,7 @@ function toggleBInput() {
 
 function toggleABInput() {
   if (!abInputPressed) {
-    document.getElementById("halfAdderImage").src = "https://github.com/jennxsierra/foc/blob/main/images/images/ha-ab-on.png";
+    document.getElementById("halfAdderImage").src = "https://github.com/jennxsierra/foc/blob/main/images/ha-ab-on.png";
     aInputPressed = false;
     bInputPressed = false;
     abInputPressed = true;
