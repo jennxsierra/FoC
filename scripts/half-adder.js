@@ -38,4 +38,3 @@ function toggleABInput() {
     abInputPressed = true;
   }
 }
-
