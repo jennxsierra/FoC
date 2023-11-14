@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
+    </style>
+    <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../images/apple-touch-icon.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../images/favicon-32x32.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/site.webmanifest" />
+    <script
+            src="https://kit.fontawesome.com/a43a88b1eb.js"
+            crossorigin="anonymous"
+    ></script>
+    <title>Flip-Flop</title>
+    <link rel="stylesheet" href="../styles/flip-flop.css" />
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+    <div class="nav-section">
+        <div class="navbar-title">FUNDAMENTALS OF COMPUTING</div>
+    </div>
+    <div class="nav-section">
+        <a href="../index.html"><i class="fa-solid fa-chalkboard"></i>Course</a>
+        <a class="active" href="projects.html"
+        ><i class="fa-solid fa-diagram-project"></i>Projects</a
+        >
+        <a href="../concepts/concepts.html"
+        ><i class="fa-solid fa-gears"></i>Concepts</a
+        >
+        <a href="../database/database.html"
+        ><i class="fa-solid fa-database"></i>Database</a
+        >
+        <a href="../documentation/documentation.html"
+        ><i class="fa-solid fa-folder-tree"></i>Documentation</a
+        >
+        <a href="../aboutme/aboutme.html"
+        ><i class="fa-solid fa-user"></i>About</a
+        >
+        <a
+                href="javascript:void(0);"
+                class="icon"
+                onclick="myFunction()"
+                style="width: 14px"
+        >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+<main>
+    <h2>Flip-Flop</h2>
+    <div class="proj-description">
+        <p>
+            A circuit built from gates that can store one bit. One input line is used to set its stored value to 1.
+            One input line is used to set its stored value to 0. While both input lines are 0, the most recently stored
+            value is preserved. The stored value is called the state of the flip-flop.
+        </p>
+    </div>
+
+    <div class="flip-flop-container">
+        <img id="flipFlopImage" src="../images/flip-flop-off.png" alt="Flip Flop Image">
+        <div class="buttons">
+            <div class="buttonS"><button onclick="toggleSInput()">Set</button></div>
+            <div class="buttonR"><button onclick="toggleRInput()">Reset</button></div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-icons">
+        <a href="https://github.com/jennxsierra" target="_blank"
+        ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jennessa-sierra/" target="_blank"
+        ><i class="fab fa-linkedin"></i
+        ></a>
+    </div>
+    <div class="footer-text">Jennessa Sierra @ 2023</div>
+</footer>
+
+<script src="../scripts/flip-flop.js"></script>
+</body>
+</html>

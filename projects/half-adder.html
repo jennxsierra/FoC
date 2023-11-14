@@ -28,8 +28,8 @@
       src="https://kit.fontawesome.com/a43a88b1eb.js"
       crossorigin="anonymous"
     ></script>
-    <title>Projects</title>
-    <link rel="stylesheet" href="../styles/projects.css" />
+    <title>Half-Adder</title>
+    <link rel="stylesheet" href="../styles/half-adder.css" />
   </head>
 
   <body>
@@ -66,45 +66,26 @@
     </div>
 
     <main>
-      <h2>Projects</h2>
+      <h2>Half Adder</h2>
       <div class="proj-description">
         <p>
-          Discover the power of JavaScript through exploring a variety of
-          practical applications. From interactive calculators and converters to
-          logic gate simulators, these carefully crafted programs demonstrate
-          the endless possibilities of this versatile language.
+          A half adder is a digital logic circuit that performs binary addition of two single-bit binary numbers.
+          It has two inputs, A and B, and two outputs, SUM and CARRY. The SUM output is the least significant bit (LSB)
+          of the result, while the CARRY output is the most significant bit (MSB) of the result, indicating whether
+          there was a carry-over from the addition of the two inputs. The half adder can be implemented using basic
+          gates such as XOR and AND gates.
         </p>
       </div>
-      <a href="flip-flop.html">
-        <div class="project">
-          <h3 class="project-title">Flip-Flop</h3>
+
+      <div class="half-adder-container">
+        <img id="halfAdderImage" src="../images/half-adder.png" alt="Half Adder Image">
+        <div class="buttons">
+          <div class="buttonA"><button onclick="toggleAInput()">A Input</button></div>
+          <div class="buttonB"><button onclick="toggleBInput()">B Input</button></div>
+          <div class="buttonC"><button onclick="toggleABInput()">A+B Input</button></div>
         </div>
-      </a>
-      <a href="half-adder.html">
-        <div class="project">
-          <h3 class="project-title">Half Adder</h3>
-        </div>
-      </a>
-      <a href="">
-        <div class="project">
-          <h3 class="project-title">Binary/Hexadecimal Converter</h3>
-        </div>
-      </a>
-      <a href="">
-        <div class="project">
-          <h3 class="project-title">ASCII Converter</h3>
-        </div>
-      </a>
-      <a href="">
-        <div class="project">
-          <h3 class="project-title">UNICODE Converter</h3>
-        </div>
-      </a>
-      <a href="">
-        <div class="project">
-          <h3 class="project-title">Machine Language Instructions Demo</h3>
-        </div>
-      </a>
+      </div>
+
     </main>
 
     <footer class="footer">
@@ -119,6 +100,6 @@
       <div class="footer-text">Jennessa Sierra @ 2023</div>
     </footer>
 
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/half-adder.js"></script>
   </body>
 </html>
