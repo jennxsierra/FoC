@@ -37,5 +37,5 @@ function toggleRInput() {
 function updateFlipFlopImage() {
   document.getElementById(
     "flipFlopImage",
-  ).src = "https://jennxsierra.github.io/foc/images/flip-flop-${flipFlopState}.png";
+  ).src = `https://jennxsierra.github.io/foc/images/flip-flop-${flipFlopState}.png`;
 }
