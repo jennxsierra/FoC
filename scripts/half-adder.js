@@ -8,15 +8,13 @@ function myFunction() {
   }
 }
 
-//JS for half-adder
 let aInputPressed = false;
 let bInputPressed = false;
 let abInputPressed = false;
 
 function toggleAInput() {
   if (!aInputPressed) {
-    document.getElementById("halfAdderImage").src =
-      "https://jennxsierra.github.io/foc/images/images/ha-a-on.png";
+    document.getElementById("halfAdderImage").src = "https://jennxsierra.github.io/foc/images/ha-a-on.png";
     aInputPressed = true;
     bInputPressed = false;
     abInputPressed = false;
@@ -25,8 +23,7 @@ function toggleAInput() {
 
 function toggleBInput() {
   if (!bInputPressed) {
-    document.getElementById("halfAdderImage").src =
-      "https://jennxsierra.github.io/foc/images/ha-b-on.png";
+    document.getElementById("halfAdderImage").src = "https://jennxsierra.github.io/foc/images/ha-b-on.png";
     aInputPressed = false;
     bInputPressed = true;
     abInputPressed = false;
@@ -35,8 +32,7 @@ function toggleBInput() {
 
 function toggleABInput() {
   if (!abInputPressed) {
-    document.getElementById("halfAdderImage").src =
-      "https://jennxsierra.github.io/foc/images/ha-ab-on.png";
+    document.getElementById("halfAdderImage").src = "https://jennxsierra.github.io/foc/images/ha-ab-on.png";
     aInputPressed = false;
     bInputPressed = false;
     abInputPressed = true;
