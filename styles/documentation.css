@@ -1,122 +1,166 @@
 html {
-    font-family: 'Epilogue', sans-serif;
-    background-color: #f9f9fb;
+  font-family: "Epilogue", sans-serif;
+  background-color: #f9f9fb;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-    margin: 8px;
+  flex: 1; /* Allow the main content to grow and push the footer down */
+  padding: 20px 200px;
+}
+
+h2 {
+  border-bottom: 4px solid #537fe7;
+}
+
+img {
+  width: 55%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #06112c;
+}
+
+.doc-file {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #245cdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #96ade3;
+}
+
+.doc-file img:hover {
+  opacity: 0.8;
+}
+
+.pop-out {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add the hover effect */
+.pop-out:hover {
+  transform: scale(1.02);
 }
 
 .topnav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #181823;
-    overflow: hidden;
-    width: 100%;
-    border-bottom: 8px solid #245cdf; /* Set your desired border color */
+  display: flex;
+  justify-content: space-between;
+  background-color: #181823;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 8px solid #245cdf; /* Set your desired border color */
 }
 
 /* Style the navbar title */
 .topnav .navbar-title {
-    color: #f2f2f2;
-    float: left;
-    padding: 20px 0 0 14px;
-    font-size: 25px;
+  color: #f2f2f2;
+  float: left;
+  padding: 20px 0 0 14px;
+  font-size: 25px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 14px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 /* Style the icons inside the links */
 .topnav a i {
-    margin-right: 10px; /* Add margin between the icon and the link text */
+  margin-right: 10px; /* Add margin between the icon and the link text */
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #537fe7;
-    color: #181823;
+  background-color: #537fe7;
+  color: #181823;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #245cdf;
-    color: #e9f8f9;
+  background-color: #245cdf;
+  color: #e9f8f9;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    display: none;
+  display: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links.
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1100px) {
-    .topnav a {display: none;}
-    .topnav .navbar-title {
-        padding-top: 18px;
-        padding-bottom: 8px;
-    }
-    .topnav a.icon {
-        display: block;
-        padding-bottom: 14px;
-    }
+  .topnav a {
+    display: none;
+  }
+  .topnav .navbar-title {
+    padding-top: 18px;
+    padding-bottom: 8px;
+  }
+  .topnav a.icon {
+    display: block;
+    padding-bottom: 14px;
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes
 the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 1100px) {
-    .topnav.responsive {
-        display: flex;
-        flex-direction: column;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /* Styles for the footer */
 .footer {
-    background-color: #181823;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #181823;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  left: 0;
+  bottom: 0;
+  width: auto;
 }
 
 .footer-icons a {
-    color: #f2f2f2;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 24px;
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 24px;
 }
 
 /* Add hover effect to the icons */
 .footer-icons a:hover {
-    color: #537fe7;
+  color: #537fe7;
 }
 
 .footer-text {
-    margin-top: 10px;
-    font-size: 14px;
+  margin-top: 10px;
+  font-size: 14px;
 }

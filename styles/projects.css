@@ -33,6 +33,15 @@ a {
   background-color: rgb(83 127 231 / 0.6);
 }
 
+.pop-out {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add the hover effect */
+.pop-out:hover {
+  transform: scale(1.05);
+}
+
 .topnav {
   display: flex;
   justify-content: space-between;
