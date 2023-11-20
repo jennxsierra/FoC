@@ -28,8 +28,8 @@
       src="https://kit.fontawesome.com/a43a88b1eb.js"
       crossorigin="anonymous"
     ></script>
-    <title>Binary/Hexadecimal Converter</title>
-    <link rel="stylesheet" href="../styles/binarytohexadecimal.css" />
+    <title>UNICODE Converter</title>
+    <link rel="stylesheet" href="../styles/unicode-conv.css" />
   </head>
 
   <body>
@@ -73,52 +73,71 @@
         </div>
       </a>
 
-      <h2>Binary/Hexadecimal Converter</h2>
+      <h2>UNICODE Converter</h2>
       <div class="proj-description">
         <p>
-          Binary, hexadecimal and decimal number systems are different ways of
-          representing numbers. Binary numbers use only two digits: 0 and 1, and
-          are used by computers to store and process information. Hexadecimal
-          numbers use 16 digits: 0 to 9 and A to F, and are used to represent
-          large binary numbers in a compact and human-readable way. Decimal
-          numbers use 10 digits: 0 to 9, and are the standard form of
-          representing numbers in mathematics and everyday life.
+          Unicode, formally The Unicode Standard, is a text encoding standard
+          maintained by the Unicode Consortium designed to support the use of
+          text written in all the world's major writing systems. Version 15.1 of
+          the standard defines 149813 characters and 161 scripts used in various
+          ordinary, literary, academic, and technical contexts.
         </p>
         <p>
-          To convert numbers between different systems, we can use tables and
-          formulas. For example, to convert a binary number to decimal, we
-          multiply each bit by its positional value (a power of 2) and add them
-          up. To convert a hexadecimal number to decimal, we multiply each hex
-          digit by its positional value (a power of 16) and add them up. To
-          convert a decimal number to binary or hexadecimal, we divide the
-          number by the base (2 or 16) repeatedly and write the remainders in
-          reverse order.
+          Many common characters, including numerals, punctuation, and other
+          symbols, are unified within the standard and are not treated as
+          specific to any given writing system. Unicode encodes thousands of
+          emoji, with the continued development thereof conducted by the
+          Consortium as a part of the standard. Moreover, the widespread
+          adoption of Unicode was in large part responsible for the initial
+          popularization of emoji outside of Japan. Unicode is ultimately
+          capable of encoding more than 1.1 million characters.
         </p>
       </div>
+
       <div class="project-content">
-        <div class="conv-table">
-          <img
-            id="convTable"
-            src="../images/conv-table.png"
-            alt="Conversion Table"
-            loading="lazy"
-          />
+        <div class="uni-conv">
+          <h4>UNICODE Converter</h4>
+          <input type="text" id="unicodeInput" placeholder="Enter Text" />
+          <label for="unicodeInput"></label>
+          <button onclick="convertUnicodeToSymbol()"><b>Convert</b></button>
+          <p id="symbolOutput">UNICODE Character:</p>
         </div>
-        <div class="converters">
-          <div class="binary-hex">
-            <h4>Binary to Hexadecimal Converter</h4>
-            <input type="text" id="binaryInput" placeholder="Enter Binary Number" />
-            <label for="binaryInput"></label>
-            <button onclick="convertBinaryToHex()"> <b>Convert</b> </button>
-            <p id="hexOutput">Hexadecimal: </p>
+
+        <div class="conv-tables">
+          <div class="table1">
+            <img
+              id="uniTable1"
+              src="../images/U1F300-02.png"
+              alt="Conversion Table"
+              loading="lazy"
+            />
           </div>
 
-          <div class="hex-binary">
-            <h4>Hexadecimal to Binary Converter</h4>
-            <input type="text" id="hexInput" placeholder="Enter Hexadecimal Number" />
-            <label for="hexInput"></label>
-            <button onclick="convertHexToBinary()"> <b>Convert</b> </button>
-            <p id="binaryOutput">Binary: </p>
+          <div class="table2">
+            <img
+              id="uniTable2"
+              src="../images/U1F300-03.png"
+              alt="Conversion Table"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="table3">
+            <img
+              id="uniTable3"
+              src="../images/U1F300-04.png"
+              alt="Conversion Table"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="table4">
+            <img
+              id="uniTable4"
+              src="../images/U1F900-2.png"
+              alt="Conversion Table"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -136,6 +155,6 @@
       <div class="footer-text">Jennessa Sierra @ 2023</div>
     </footer>
 
-    <script src="../scripts/binarytohexadecimal.js"></script>
+    <script src="../scripts/unicode-conv.js"></script>
   </body>
 </html>

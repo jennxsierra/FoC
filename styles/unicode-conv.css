@@ -1,0 +1,235 @@
+html {
+    font-family: 'Epilogue', sans-serif;
+    background-color: #f9f9fb;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and push the footer down */
+    padding: 20px 200px;
+}
+
+a {
+    text-decoration: none;
+    color: #06112c;
+}
+
+h2 {
+    border-bottom: 4px solid #537fe7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: high-quality;
+}
+
+.backlink {
+    width: 75px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #06112c;
+    background-color: #7898e3;
+}
+
+.backlink:hover {
+    background-color: #527ee5;
+    color: #06112c;
+}
+
+.pop-out {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add the hover effect */
+.pop-out:hover {
+    transform: scale(1.05);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.uni-conv {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 50px;
+    border: 2px solid #245cdf;
+    padding: 5px 30px;
+    background-color: #96ade3;
+}
+
+.conv-tables {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 2px solid #245cdf;
+}
+
+button {
+    background-color: #245cdf;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    opacity: 0.8;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#symbolOutput {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #181823;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 8px solid #245cdf; /* Set your desired border color */
+}
+
+/* Style the navbar title */
+.topnav .navbar-title {
+    color: #f2f2f2;
+    float: left;
+    padding: 20px 0 0 14px;
+    font-size: 25px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Style the icons inside the links */
+.topnav a i {
+    margin-right: 10px; /* Add margin between the icon and the link text */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #537fe7;
+    color: #181823;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #245cdf;
+    color: #e9f8f9;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .topnav a {display: none;}
+    .topnav .navbar-title {
+        padding-top: 18px;
+        padding-bottom: 8px;
+    }
+    .topnav a.icon {
+        display: block;
+        padding-bottom: 14px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .topnav.responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Styles for the footer */
+.footer {
+    background-color: #181823;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    left: 0;
+    bottom: 0;
+    width: auto;
+}
+
+.footer-icons a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+/* Add hover effect to the icons */
+.footer-icons a:hover {
+    color: #537fe7;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
