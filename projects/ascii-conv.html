@@ -28,8 +28,8 @@
       src="https://kit.fontawesome.com/a43a88b1eb.js"
       crossorigin="anonymous"
     ></script>
-    <title>Projects</title>
-    <link rel="stylesheet" href="../styles/projects.css" />
+    <title>ASCII Converter</title>
+    <link rel="stylesheet" href="../styles/ascii-conv.css" />
   </head>
 
   <body>
@@ -52,7 +52,7 @@
           ><i class="fa-solid fa-folder-tree"></i>Documentation</a
         >
         <a href="../aboutme/aboutme.html"
-        ><i class="fa-solid fa-user"></i>About</a
+          ><i class="fa-solid fa-user"></i>About</a
         >
         <a
           href="javascript:void(0);"
@@ -66,45 +66,55 @@
     </div>
 
     <main>
-      <h2>Projects</h2>
+      <a href="projects.html">
+        <div class="backlink pop-out">
+          <i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i
+          ><b>Projects</b>
+        </div>
+      </a>
+
+      <h2>ASCII Converter</h2>
       <div class="proj-description">
         <p>
-          Discover the power of JavaScript through exploring a variety of
-          practical applications. From interactive calculators and converters to
-          logic gate simulators, these carefully crafted programs demonstrate
-          the endless possibilities of this versatile language.
+          ASCII, stands for American Standard Code for Information Interchange.
+          It is a 7-bit character code where each individual bit represents a
+          unique character. This page shows the extended ASCII table which is
+          based on the Windows-1252 character set which is an 8-bit ASCII table
+          with 256 characters and symbols.
+        </p>
+        <p>
+          The first 32 characters in the ASCII-table are unprintable control
+          codes and are used to control peripherals such as printers. Codes
+          32-127 are common for all the different variations of the ASCII table,
+          they are called printable characters, represent letters, digits,
+          punctuation marks, and a few miscellaneous symbols. You will find
+          almost every character on your keyboard. Character 127 represents the
+          command DEL.
         </p>
       </div>
-      <a href="flip-flop.html">
-        <div class="project pop-out">
-          <h3 class="project-title">Flip-Flop</h3>
+      <div class="project-content">
+        <div class="conv-table">
+          <img
+            id="asciiTable"
+            src="../images/ascii-table.png"
+            alt="Conversion Table"
+            loading="lazy"
+          />
         </div>
-      </a>
-      <a href="half-adder.html">
-        <div class="project pop-out">
-          <h3 class="project-title">Half Adder</h3>
-        </div>
-      </a>
-      <a href="binarytohexadecimal.html">
-        <div class="project pop-out">
-          <h3 class="project-title">Binary/Hexadecimal Converter</h3>
-        </div>
-      </a>
-      <a href="ascii-conv.html">
-        <div class="project pop-out">
-          <h3 class="project-title">ASCII Converter</h3>
-        </div>
-      </a>
-      <a href="">
-        <div class="project pop-out">
-          <h3 class="project-title">UNICODE Converter</h3>
-        </div>
-      </a>
-      <a href="">
-        <div class="project pop-out">
-          <h3 class="project-title">Machine Language Instructions Demo</h3>
-        </div>
-      </a>
+          <div class="dec-ascii">
+            <h4>Decimal to ASCII Converter</h4>
+            <input
+              type="number"
+              id="decimalInput"
+              min="0"
+              max="127"
+              placeholder="Enter Decimal Number (0-127)"
+            />
+            <label for="decimalInput"></label>
+            <button onclick="convertDecimalToAscii()"><b>Convert</b></button>
+            <p id="asciiOutput">ASCII Character: </p>
+          </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -119,6 +129,6 @@
       <div class="footer-text">Jennessa Sierra @ 2023</div>
     </footer>
 
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/ascii-conv.js"></script>
   </body>
 </html>

@@ -25,6 +25,32 @@ a {
     color: #06112C;
 }
 
+.backlink {
+    width: 75px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #06112c;
+    background-color: #7898e3;
+}
+
+.backlink:hover {
+    background-color: #527ee5;
+    color: #06112c;
+}
+
+.pop-out {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add the hover effect */
+.pop-out:hover {
+    transform: scale(1.05);
+}
+
 /* Center the half-adder container and buttons */
 .half-adder-container {
     display: flex;
