@@ -17,7 +17,9 @@ function toggleSInput() {
     flipFlopState = "q";
   } else if (flipFlopState === "q") {
     flipFlopState = "sq";
-  } else if (flipFlopState === "sr" || flipFlopState === "r") {
+  } else if (flipFlopState === "sr") {
+    flipFlopState = "q";
+  } else if (flipFlopState === "r") {
     flipFlopState = "sr";
   }
   updateFlipFlopImage();
@@ -30,6 +32,10 @@ function toggleRInput() {
     flipFlopState = "sr";
   } else if (flipFlopState === "sr") {
     flipFlopState = "sq";
+  } else if (flipFlopState === "q") {
+    flipFlopState = "r";
+  } else if (flipFlopState === "r") {
+    flipFlopState = "off";
   }
   updateFlipFlopImage();
 }
