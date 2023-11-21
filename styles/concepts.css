@@ -1,57 +1,82 @@
 html {
-    font-family: 'Epilogue', sans-serif;
+    font-family: "Epilogue", sans-serif;
     background-color: #f9f9fb;
 }
 
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
 }
 
 main {
-    flex: 1;
-    margin: 20px 200px;
+    padding: 20px 200px;
 }
 
 h2 {
     border-bottom: 4px solid #537fe7;
 }
 
-.main-section {
+a {
+    text-decoration: none;
+    color: #06112c;
+    margin-bottom: 12px;
+}
+
+.concept-content {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 0 20px 20px 20px;
 }
 
 .concept {
     display: flex;
-    flex-direction: row;
-    justify-content: normal;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(83 127 231 / 0.4);
+    border: 2px solid #245cdf;
 }
 
-.concept img {
-    width: 70%;
+.concept-img {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.concept-img img {
+    width: 60%;
     height: auto;
-    margin: 0.75rem;
-    border-width: 2px;
-    border-color: #245cdf;
-    box-shadow: rgb(0 0 0 / 10%) 0 0 0 1px;
+    margin: 10px 0 7px 15px;
+    border: rgba(73, 81, 101, 0.9) 2px solid;
 }
 
-.concept .info {
-    padding: 0.75rem;
-    text-align: center;
+.concept-info {
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 15px;
 }
 
-.concept .title {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #181823;
+.concept:hover {
+    background-color: rgb(83 127 231 / 0.6);
+}
+
+.pop-out {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add the hover effect */
+.pop-out:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    margin-bottom: 1px;
+}
+
+.author {
+    margin-top: 1px;
+    color: #1A47B1;
+}
+
+.description {
+    margin-right: 5px;
 }
 
 .topnav {
@@ -106,23 +131,13 @@ h2 {
 /* When the screen is less than 600 pixels wide, hide all links.
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1100px) {
-
-    html {
-        width: fit-content;
+    .topnav a {
+        display: none;
     }
-
-    .main-section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topnav a {display: none;}
-
     .topnav .navbar-title {
         padding-top: 18px;
         padding-bottom: 8px;
     }
-
     .topnav a.icon {
         display: block;
         padding-bottom: 14px;
