@@ -23,12 +23,12 @@ strong {
   font-size: 20px;
 }
 
-.main-section {
+.course-info,
+.instructor-info {
   display: flex;
   flex-direction: row;
   gap: 50px;
   padding: 0 20px 20px 20px;
-  border-bottom: 4px solid #537fe7;
 }
 
 .course-image {
@@ -36,12 +36,24 @@ strong {
   height: 40%;
 }
 
-.description {
+.dr-ryan-img {
+  width: 40%;
+  height: 40%;
+  border: 6px solid #8c2a8f;
+  background-color: #f8c339;
+}
+
+.description,
+.instructor-bio {
   display: flex;
   flex-direction: column;
   text-align: left;
   line-height: 1.5em;
   padding-top: 0;
+}
+
+.instructor-bio strong:hover {
+  color: rgba(1,66,220,0.9);
 }
 
 .topnav {
@@ -112,7 +124,7 @@ Show the link that contains should open and close the topnav (.icon) */
     display: block;
     padding-bottom: 14px;
   }
-  .main-section {
+  .course-info {
     display: flex;
     flex-direction: column;
   }

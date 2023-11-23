@@ -23,6 +23,7 @@ strong {
     font-size: 20px;
 }
 
+
 .main-section {
     display: flex;
     flex-direction: row;
@@ -112,7 +113,7 @@ Show the link that contains should open and close the topnav (.icon) */
         display: block;
         padding-bottom: 14px;
     }
-    .main-section {
+    .course-info {
         display: flex;
         flex-direction: column;
     }
