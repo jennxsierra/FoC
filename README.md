@@ -1,7 +1,7 @@
 # foc
 
 [![Last Commit](https://img.shields.io/github/last-commit/jennxsierra/foc?style=plastic&color=blue)](https://github.com/jennxsierra/foc)
-[![wakatime](https://wakatime.com/badge/user/784f2cc4-fc95-4999-a214-1dcf7be5d55b/project/d591b127-02d1-4472-aad2-2c65ab91c339.svg?style=plastic&color=blue)](https://wakatime.com/badge/user/784f2cc4-fc95-4999-a214-1dcf7be5d55b/project/d591b127-02d1-4472-aad2-2c65ab91c339)
+[![wakatime](https://wakatime.com/badge/github/jennxsierra/foc.svg?style=plastic&color=blue)](https://wakatime.com/badge/github/jennxsierra/foc)
 [![GitHub](https://img.shields.io/github/license/jennxsierra/foc?style=plastic&color=blue)](https://github.com/jennxsierra/foc/blob/main/LICENSE)
 
 Welcome to my CMPS1134 Final Project repository! In this project, I've created a comprehensive website that showcases my understanding and application of the concepts learned in the course. This README.md will guide you through the different sections of the website and explain what you can find in each of them.
